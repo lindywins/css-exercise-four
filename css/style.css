@@ -1,4 +1,70 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
+  color: black;
   font-size: 10px;
+  font-family: system-ui, sans-serif;
+}
+
+h1 {
+  font-size: 200%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 250%;
+  font-family: serif;
+  position: absolute;
+  padding: 10%;
+}
+
+img {
+  height: 100%;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+@media screen and (min-width: 575px){
+   div {
+    display: block;
+    float: left;
+    margin: 0 1% 0 1%;
+    width: 48%;
+  }
+  h1 {
+    font-size: 200%;
+    padding: 5%;
+  }
+  h2 {
+    font-size: 250%;
+    padding: 3%;
+  }
+  .container {
+    margin: 0 10% 0 10%;
+  }
+}
+
+@media screen and (min-width: 991px){
+   div {
+    display: block;
+    float: left;
+    margin: 0.5%;
+    width: 24%;
+  }
+  h1 {
+    padding: 4%;
+  }
+  h2 {
+    font-size: 220%;
+    padding: 1.5%;
+  }
+  .container {
+    margin: 0 15% 0 15%;
+  }
 }
